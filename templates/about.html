@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - FolioOne Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+       {% load static%}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: FolioOne
+  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
+  * Updated: Aug 23 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="assets/img/logo.webp" alt="">
+      <h1 class="sitename">FolioOne</h1> 
+    </a> -->
+
+      <nav id="navmenu" class="navmenu">
+  <ul>
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}" class="active">About</a></li>
+    <li><a href="{% url 'resume' %}">Resume</a></li>
+    <li><a href="{% url 'services' %}">Services</a></li>
+    <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+
+    <li class="dropdown">
+      <a href="#"><span>Dropdown</span> 
+      <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="#">Dropdown 1</a></li>
+        <li class="dropdown">
+          <a href="#"><span>Deep Dropdown</span> 
+          <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Deep Dropdown 1</a></li>
+            <li><a href="#">Deep Dropdown 2</a></li>
+            <li><a href="#">Deep Dropdown 3</a></li>
+            <li><a href="#">Deep Dropdown 4</a></li>
+            <li><a href="#">Deep Dropdown 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Dropdown 2</a></li>
+        <li><a href="#">Dropdown 3</a></li>
+        <li><a href="#">Dropdown 4</a></li>
+      </ul>
+    </li>
+
+    <!-- ✅ FIXED -->
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+
+  </ul>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>About</h2>
+  <p>
+    I am passionate about building meaningful digital experiences that combine creativity, clarity, and functionality. 
+    My goal is to create solutions that not only look great but also solve real-world problems efficiently.
+  </p>
+</div><!-- End Section Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <!-- Intro + Photo -->
+  <div class="row align-items-center justify-content-between gy-5 mb-5">
+    <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+      <div class="intro-content">
+        <span class="eyebrow">Hello there</span>
+        <h2 class="headline">Hi, I'm William Akoyi Andere - a calm-minded creative developer crafting serene digital journeys</h2>
+        <p class="lead">
+          I focus on designing intuitive interfaces and developing responsive, high-performing websites that provide smooth and engaging user experiences across all devices.
+        </p>
+        <p>
+          With a strong foundation in both design and development, I blend aesthetics with functionality to deliver digital products that are modern, reliable, and impactful. 
+          I enjoy transforming ideas into structured, user-centered solutions.
+        </p>
+
+        <div class="cta-group">
+          <a href="#portfolio" class="btn-ghost">
+            View My Work <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <a href="#" class="link-underline">
+            Download Resume <i class="bi bi-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+      <figure class="profile-figure text-center text-lg-end">
+        <img src="{% static 'assets/img/profile/WhatsApp Image 2026-02-11 at 6.50.07 AM.jpeg'%}" alt="Portrait of Alex" class="img-fluid profile-photo">
+      </figure>
+    </div>
+  </div>
+  <!-- End Intro + Photo -->
+
+  <!-- Skills Grid -->
+  <div class="mb-5">
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+        <div class="skill-item">
+          <i class="bi bi-layout-text-window"></i>
+          <h3>UI/UX</h3>
+          <p>
+            Designing clean, user-friendly interfaces that enhance usability and engagement.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+        <div class="skill-item">
+          <i class="bi bi-code-slash"></i>
+          <h3>React.js</h3>
+          <p>
+            Building dynamic and interactive web applications with modern JavaScript frameworks.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="skill-item">
+          <i class="bi bi-phone"></i>
+          <h3>Mobile-first</h3>
+          <p>
+            Creating responsive designs optimized for mobile devices and all screen sizes.
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-item">
+          <i class="bi bi-camera"></i>
+          <h3>Photography</h3>
+          <p>
+            Capturing moments and visual stories that complement digital branding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Skills Grid -->
+
+       <!-- Journey Timeline -->
+<div class="mb-5">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+      <article class="timeline-item">
+        <span class="dot"></span>
+        <time>2018</time>
+        <h4>B.A. in Design</h4>
+        <p>Completed a degree focused on visual communication, branding, and user-centered design principles.</p>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+      <article class="timeline-item">
+        <span class="dot"></span>
+        <time>2020</time>
+        <h4>Freelance Start</h4>
+        <p>Began working with clients independently, delivering websites and digital branding solutions.</p>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+      <article class="timeline-item">
+        <span class="dot"></span>
+        <time>2022</time>
+        <h4>Joined Creative Studio</h4>
+        <p>Collaborated with a multidisciplinary team to build engaging and responsive digital products.</p>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+      <article class="timeline-item">
+        <span class="dot"></span>
+        <time>2024</time>
+        <h4>Lead Frontend</h4>
+        <p>Led frontend development projects, ensuring performance, scalability, and clean architecture.</p>
+      </article>
+    </div>
+  </div>
+</div>
+<!-- End Journey Timeline -->
+
+<!-- Quote -->
+<blockquote class="personal-quote text-center mb-5" data-aos="fade-down" data-aos-delay="200">
+  <p>"Turning ideas into elegant digital experiences through thoughtful design and precise code."</p>
+</blockquote>
+<!-- End Quote -->
+
+<!-- Fun Facts -->
+<div class="row g-3 justify-content-center">
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
+    <div class="fact-pill">
+      <i class="bi bi-magic"></i>
+      <span>Minimalism</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
+    <div class="fact-pill">
+      <i class="bi bi-headphones"></i>
+      <span>Lo-fi Beats</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+    <div class="fact-pill">
+      <i class="bi bi-geo-alt"></i>
+      <span>City Walks</span>
+    </div>
+  </div>
+  <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+    <div class="fact-pill">
+      <i class="bi bi-brush"></i>
+      <span>Sketching</span>
+    </div>
+  </div>
+</div>
+<!-- End Fun Facts -->
+
+</div>
+
+</section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>
+      I combine technical expertise with creative thinking to build responsive, high-quality digital products. 
+      Below are some of the tools and technologies I work with regularly.
+    </p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row g-4 skills-animation">
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-box">
+          <h3>HTML</h3>
+          <p>Structuring clean, semantic, and accessible web content.</p>
+          <span class="text-end d-block">90%</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-box">
+          <h3>CSS</h3>
+          <p>Designing responsive layouts with modern styling techniques.</p>
+          <span class="text-end d-block">90%</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-box">
+          <h3>Kotlin</h3>
+          <p>Creating interactive and dynamic mobile applications.</p>
+          <span class="text-end d-block">80%</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="skill-box">
+          <h3>Bootstrap</h3>
+          <p>Creating interactive and dynamic user experiences.</p>
+          <span class="text-end d-block">55%</span>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+   <!-- Stats Section -->
+<section id="stats" class="stats section dark-background">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row align-items-center">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="avatars d-flex align-items-center">
+          <img src="{% static 'assets/img/person/person-m-2.webp'%}" alt="Avatar 1" class="rounded-circle" loading="lazy">
+          <img src="{% static 'assets/img/person/person-m-3.webp'%}" alt="Avatar 2" class="rounded-circle" loading="lazy">
+          <img src="{% static 'assets/img/person/person-f-5.webp'%}" alt="Avatar 3" class="rounded-circle" loading="lazy">
+          <img src="{% static 'assets/img/person/person-m-5.webp'%}" alt="Avatar 4" class="rounded-circle" loading="lazy">
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row counters">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <h2><span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1" class="purecounter"></span>+150</h2>
+            <p>Projects Completed</p>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <h2><span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>1056</h2>
+            <p>Lines of Code Written</p>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <h2><span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter"></span>+45</h2>
+            <p>Satisfied Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Stats Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What clients and collaborators say about working with me.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".init-swiper", {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000,
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>William delivered beyond expectations. His attention to detail and clean code structure made our platform faster and more user-friendly.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                  <h4>CEO &amp; Founder</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="{% static 'assets/img/person/person-m-9.webp'%}" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Working with William was seamless. He understood our brand vision and transformed it into a beautiful and functional website.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="{%static 'assets/img/person/person-f-5.webp'%}" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Professional, reliable, and highly skilled. The final product exceeded our expectations in both performance and design.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="{% static 'assets/img/person/person-f-12.webp'%}" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Exceptional frontend expertise and a strong eye for design. I highly recommend him for any modern web project.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="{% static 'assets/img/person/person-m-12.webp'%}" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Williams-Portfolio</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">William Akoyi</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+   <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="'{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
